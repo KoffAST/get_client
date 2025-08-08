@@ -14,6 +14,7 @@
         justify-content: center;
         align-items: center;
         min-height: 100vh;
+        flex-direction: column;
     }
     .content-box {
         background-color: #ffffff;
@@ -30,12 +31,38 @@
         font-size: 28px;
         margin-top: 0;
     }
+    button {
+        background-color: #007BFF;
+        color: white;
+        padding: 15px 30px;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+    .back-button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: #555;
+        background-color: #e0e0e0;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    .back-button:hover {
+        background-color: #d0d0d0;
+    }
 </style>
 </head>
 <body>
 <div class="content-box">
     <h1>Get Client "Безкоштовний"</h1>
-    <script async src="https://widgets.streamtele.com/widget/2bc9ff3e92ace745ea972f60af315801/" type="text/javascript" charset="UTF-8"></script>
+    <button onclick="window.streamTelecomWidgetModalFeedbackHandler();">Викликати віджет повідомлень</button>
+    <br>
+    <a href="index.html" class="back-button">Повернутись на головну</a>
 </div>
 </body>
 </html>
