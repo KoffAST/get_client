@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>Get Client "Легкий старт"</title>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script async src="https://widgets.streamtele.com/widget/43533657bdbbcf7360449c5daa448cc5/" type="text/javascript" charset="UTF-8"></script>
 <style>
     body {
         font-family: sans-serif;
@@ -14,6 +15,7 @@
         justify-content: center;
         align-items: center;
         min-height: 100vh;
+        flex-direction: column;
     }
     .content-box {
         background-color: #ffffff;
@@ -30,12 +32,22 @@
         font-size: 28px;
         margin-top: 0;
     }
+    button {
+        background-color: #007BFF;
+        color: white;
+        padding: 15px 30px;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
 </style>
 </head>
 <body>
 <div class="content-box">
     <h1>Get Client "Легкий старт"</h1>
-    <script async src="https://widgets.streamtele.com/widget/43533657bdbbcf7360449c5daa448cc5/" type="text/javascript" charset="UTF-8"></script>
+    <button onclick="window.streamTelecomWidgetModalCallbackHandler();">Викликати віджет зворотного дзвінка</button>
 </div>
 </body>
 </html>
