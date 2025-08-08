@@ -2,50 +2,41 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Приклад роботи віджетів Get Client</title>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<title>Головна сторінка</title>
 <style>
     body {
         font-family: sans-serif;
-        margin: 0;
-        padding: 20px;
-        background-color: #f0f2f5;
-    }
-    .section-container {
         display: flex;
         flex-direction: column;
-        gap: 20px; /* Відстань між блоками */
-    }
-    .example-section {
-        background-color: #ffffff;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        padding: 20px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f0f2f5;
+        text-align: center;
     }
     h1 {
-        text-align: center;
         color: #333;
-        font-size: 24px;
-        margin-top: 0;
+        font-size: 28px;
+    }
+    .link-button {
+        display: inline-block;
+        margin: 15px;
+        padding: 12px 25px;
+        font-size: 18px;
+        color: #fff;
+        background-color: #007BFF;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    .link-button:hover {
+        background-color: #0056b3;
     }
 </style>
 </head>
 <body>
-
-<div class="section-container">
-    
-    <div class="example-section">
-        <h1 style="text-align: center;">Get Client "Легкий старт"</h1>
-        <script async src="https://widgets.streamtele.com/widget/43533657bdbbcf7360449c5daa448cc5/" type="text/javascript" charset="UTF-8"></script>
-    </div>
-
-    <div class="example-section">
-        <h1 style="text-align: center;">Get Client "Безкоштовний"</h1>
-        <script async src="https://widgets.streamtele.com/widget/2bc9ff3e92ace745ea972f60af315801/" type="text/javascript" charset="UTF-8"></script>
-    </div>
-
-</div>
-
+    <h1>Приклади кнопок "Get Client"</h1>
+    <a href="start.html" class="link-button">"Легкий старт"</a>
+    <a href="free.html" class="link-button">"Безкоштовний"</a>
 </body>
 </html>
